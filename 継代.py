@@ -20,7 +20,7 @@ sns.violinplot(data=df, y="継代後/継代前", inner='quartile', color="white"
 sns.swarmplot(data=df, y="継代後/継代前", color="skyblue")
 plt.title("継代実験の結果")
 plt.tick_params(bottom=False)
-plt.text(-0.48, 0.6, f"Ave\n継代前:{df["継代前"].astype(float).mean():.2f}\n継代後:{df["継代後"].astype(float).mean():.3f}\n継代後/継代前:{df["継代後/継代前"].astype(float).mean():.5f}")
+plt.text(-0.48, 0.6, f"平均(x 10$^{{{4}}}$cells/ml):\n継代前:{df["継代前"].astype(float).mean():.2f}\n継代後:{df["継代後"].astype(float).mean():.3f}\n継代後/継代前:{df["継代後/継代前"].astype(float).mean():.5f}")
 plt.tight_layout()
 plt.savefig("./output/継代.jpg", dpi=500)
 plt.savefig("/Users/kotaro/Desktop/継代.jpg", dpi=500)
