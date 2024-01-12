@@ -14,6 +14,7 @@ df = df.rename(columns={"人数確認番号": "番号",
 df = df.dropna(subset=["継代前"])
 df = df.dropna(subset=["継代後"])
 df["継代後/継代前"] = df["継代後"].astype(float)/df["継代前"].astype(float)
+
 fig = plt.figure(figsize=(4, 6))
 sns.violinplot(data=df, y="継代後/継代前", inner='quartile', color="white")
 sns.swarmplot(data=df, y="継代後/継代前", color="skyblue")
