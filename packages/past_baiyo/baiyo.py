@@ -1,10 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib_fontja
 import numpy as np
 from scipy.optimize import curve_fit
-from tools.preprocessing import preprocessing
-from tools.funcs import func, func2, display_func, display_func2
+from packages.tools import preprocessing
+from packages.tools import func, func2
 
 
 def graph_baiyo(df):

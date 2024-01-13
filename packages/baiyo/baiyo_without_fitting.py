@@ -1,10 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib_fontja
 import numpy as np
-from scipy.optimize import curve_fit
-from tools.preprocessing import preprocessing
-from tools.funcs import func, func2, display_func, display_func2
+from packages.tools.preprocessing import preprocessing
 
 
 def graph_baiyo_without_fitting(df: pd.DataFrame) -> str:
@@ -54,6 +51,6 @@ def graph_baiyo_without_fitting(df: pd.DataFrame) -> str:
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("/Users/kotaro/PycharmProjects/tampaku/input/2024蛋白質代謝学生実習細胞増殖実験 - 増殖実験.csv",
+    df = pd.read_csv("/input/2024蛋白質代謝学生実習細胞増殖実験 - 増殖実験.csv",
                      skiprows=3)
     graph_baiyo_without_fitting(df)

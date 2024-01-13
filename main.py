@@ -1,7 +1,7 @@
 import pandas as pd
-from baiyo.baiyo_sushiki_samplenum import graph_baiyo_sushiki_num
-from baiyo.baiyo_sushiki_oneplate import graph_baiyo_oneplate
-from tools.merge_img import merge_img
+from packages.baiyo.baiyo_sushiki_samplenum import graph_baiyo_sushiki_num
+from packages.baiyo.baiyo_sushiki_oneplate import graph_baiyo_oneplate
+from packages.tools.merge_img import merge_img
 
 if __name__ == "__main__":
     df = pd.read_csv("/Users/kotaro/PycharmProjects/tampaku/input/2024蛋白質代謝学生実習細胞増殖実験 - 増殖実験.csv",

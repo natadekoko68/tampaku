@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import matplotlib_fontja
 import seaborn as sns
 
-df = pd.read_csv("/Users/kotaro/PycharmProjects/tampaku/input/2024蛋白質代謝学生実習細胞増殖実験 - 各自継代練習.csv")
+df = pd.read_csv("/Users/kotaro/PycharmProjects/tampaku/input/2024蛋白質代謝学生実習細胞増殖実験 - 各自継代練習_name_erase.csv")
 
 df = df[df["人数確認番号"].notna()].reset_index(drop=True)
-df = df.drop(["Unnamed: 1", "Unnamed: 2"], axis=1)
+df = df.drop(["Unnamed: 1"], axis=1)
 df["人数確認番号"] = df["人数確認番号"].astype(int)
 df = df.rename(columns={"人数確認番号": "番号",
                         "継代前の細胞数カウント": "継代前",
