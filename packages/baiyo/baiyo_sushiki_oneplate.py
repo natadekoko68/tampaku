@@ -52,6 +52,6 @@ def graph_baiyo_oneplate(df: pd.DataFrame) -> str:
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("/input/2024蛋白質代謝学生実習細胞増殖実験 - 増殖実験.csv",
+    df = pd.read_csv("/Users/kotaro/PycharmProjects/tampaku/input/2024蛋白質代謝学生実習細胞増殖実験 - 増殖実験.csv",
                      skiprows=3)
     graph_baiyo_oneplate(df)

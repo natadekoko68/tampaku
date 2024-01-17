@@ -1,5 +1,5 @@
 import pandas as pd
-from packages.baiyo.baiyo_sushiki_samplenum import graph_baiyo_sushiki_num
+from packages.past_baiyo.baiyo_sushiki_samplenum import graph_baiyo_sushiki_num
 from packages.baiyo.baiyo_sushiki_oneplate import graph_baiyo_oneplate
 from packages.tools.merge_img import merge_img
 
